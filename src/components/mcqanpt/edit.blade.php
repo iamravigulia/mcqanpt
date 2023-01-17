@@ -64,7 +64,7 @@
                         <div class="w-full px-4">{{-- w-1/3 --}}
                             <div class="my-2">
                                 <label class="bloc" for="">Hint</label>
-                                <textarea class="w-full border border-gray-500 rounded-lg p-2" name="hint" id="" cols="30" rows="4" placeholder="Hint" maxlength="250">{{$que->hint ?? ''}}</textarea>
+                                <textarea class="w-full border border-gray-500 rounded-lg p-2" name="hint" id="" cols="30" rows="4" placeholder="Comment">{{$que->hint}}</textarea>
                             </div>
                         </div>{{-- //w-1/3 --}}
                     </div>
@@ -119,12 +119,6 @@
                         </div>
                         {{--  --}}
                     @endforeach
-                    <div class="w-full px-4">{{-- w-1/3 --}}
-                        <div class="my-2">
-                            <label class="bloc" for="">Comment</label>
-                            <textarea class="w-full border border-gray-500 rounded-lg p-2" name="hint" id="" cols="30" rows="4" placeholder="Comment">{{$que->hint}}</textarea>
-                        </div>
-                    </div>{{-- //w-1/3 --}}
                     <button class="my-2 py-1 px-2 bg-blue-600 text-white rounded-lg" type="submit">Update</button>
                 </form>
             </div>
