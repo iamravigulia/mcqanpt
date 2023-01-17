@@ -9,5 +9,6 @@ $table->string('url');
 $table->boolean('active')->default(0);
 $table->timestamps();
 
+
 <x-mof.open />
 <x-mof.index />
